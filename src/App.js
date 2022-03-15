@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
 import Header from './components/Home/Header';
+import Login from './pages/Login/Login';
 function App() {
   return (
     // Route phien ban 6. se khac voi 5. => video is on 5. verison
@@ -17,6 +18,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About />} />
           <Route path='/' element={<Home />} />
+          <Route path='/login' element={<Login></Login>}/>
         </Routes>
       </BrowserRouter>
     </div>
