@@ -9,6 +9,7 @@ import Detail from './pages/Detail/Detail';
 import Profile from './pages/Profile/Profile';
 import TodoList from './pages/TodoList/TodoList';
 import TodolistRFC from './components/TodoListRFC.js/TodolistRFC';
+import TodolistRedux from './components/TodolistRedux/TodolistRedux';
 // import './style/style.css';
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/profile' element={<Profile></Profile>}></Route>
           <Route path ='/todolist' element={<TodoList></TodoList>}/>
           <Route path ='/todolistrfc' element={<TodolistRFC></TodolistRFC>}/>
+          <Route path='/todolistredux' element={<TodolistRedux></TodolistRedux>}/>
         </Routes>
       </BrowserRouter>
     </div>

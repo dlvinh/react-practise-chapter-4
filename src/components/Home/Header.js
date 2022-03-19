@@ -40,6 +40,11 @@ export default function Header() {
                                 isActive ?  "nav-link " +activeClassName : "nav-link"
                             } to="/todolistrfc">TodolistRFC</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink className= {({ isActive }) =>
+                                isActive ?  "nav-link " +activeClassName : "nav-link"
+                            } to="/todolistredux">TodolistRedux</NavLink>
+                        </li>
                     </ul>
                     <form className="form-inline my-2 my-lg-0">
                         <input className="form-control mr-sm-2" type="text" placeholder="Search" />
