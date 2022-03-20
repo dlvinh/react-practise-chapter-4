@@ -11,6 +11,8 @@ import TodoList from './pages/TodoList/TodoList';
 import TodolistRFC from './components/TodoListRFC.js/TodolistRFC';
 import TodolistRedux from './components/TodolistRedux/TodolistRedux';
 import TodolistWithSaga from './components/TodolistWithSaga/TodolistWithSaga';
+import LoadingAnimation from './components/Home/LoadingAnimation';
+
 // import './style/style.css';
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
     // Vi Header khong dat ben trong Routes nen Header se duoc duy tri xuyen suot cac pages 
     <div>
       {/* <Header></Header>  dat o day cung duoc */}
+    <LoadingAnimation></LoadingAnimation>
       <BrowserRouter>
       <Header></Header>
         <Routes>

@@ -8,6 +8,7 @@ import { appStateReducer } from './reducers/appStateReducer';
 
 import createMiddleWareSaga from 'redux-saga'
 import { rootSaga } from './saga/rootSaga';
+import { loadingStateReducer } from './reducers/loadingStateReducer';
 
 // Configure redux Saga;
 const middleWareSaga = createMiddleWareSaga();
@@ -16,7 +17,8 @@ const middleWareSaga = createMiddleWareSaga();
 
 const rootReducer = combineReducers({
     // state here
-    appState : appStateReducer
+    appState : appStateReducer,
+    loadingState: loadingStateReducer
 })
 
 
