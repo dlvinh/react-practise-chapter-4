@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addNewTask, completeTaskAction, deleteTaskAction, getTaskListAPI, rejectTaskAction } from '../../redux/actions/actionList';
 import { GET_TASK_TYPE } from '../../redux/actions/actionTypes';
 
-const _API = "http://svcy.myclass.vn/api/ToDoList";
+
 export default function TodolistRedux() {
    const {taskList, error} = useSelector(state => state.appState);
    //const [loadingState, setLoadingState] = useState(false);
